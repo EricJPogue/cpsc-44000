@@ -27,3 +27,6 @@ hs_err_pid*
 
 # private files
 class-notes.xls
+
+# Videos and PowerPoint slides with Audio/Video (big files)
+videos/
