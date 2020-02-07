@@ -1,0 +1,6 @@
+https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-nodejs
+https://blogs.msdn.microsoft.com/laurelle/2015/12/01/how-to-deploy-a-node-js-site-into-azure-web-app-to-create-a-website/
+https://www.youtube.com/watch?v=iY1L0UC2bdE
+https://docs.microsoft.com/en-us/azure/javascript/
+https://www.youtube.com/watch?v=iY1L0UC2bdE
+https://www.freecodecamp.org/news/how-to-deploy-your-super-cool-node-app-to-azure-from-github-47ebff6c5448/
