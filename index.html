@@ -521,6 +521,9 @@
 	<p>Welcome to sprint 8. Stay focused on your final project. We will be learning about a couple other topics, but this
 	sprint is all about your final project.</p>
 
+	<p><em>It is important to remember that in our final sprint all assignments are due Thursday at 11:59pm CT. You do have a grace
+	period until 6pm CT the morning of Friday, March 6th to submit them.</em></p>
+
 	<p>By the end of this sprint we will be able to:</p>
 	<ul style="list-style-type:square">
 		<li>Utilize your knowledge of Agile development and Saas to deliver a final project that you are proud of creating</li>
@@ -673,10 +676,21 @@ function createCalendar(termID, classID) {
   table = table +'<th style="text-align:center">Duration</th>';
   table = table +"<th>Notes</th>";
   table = table +"</tr>";
+
+  let dateAdjustment = 0; // BugBug
   for (i=0; i<8; i++) {
     if (i!=0) {
-      sprintStartDate.setUTCDate(sprintStartDate.getUTCDate() + daysPerSprint);
-      sprintEndDate.setUTCDate(sprintEndDate.getUTCDate() + daysPerSprint);
+	  if (i<7) {
+      	sprintStartDate.setUTCDate(sprintStartDate.getUTCDate() + daysPerSprint);
+      	sprintEndDate.setUTCDate(sprintEndDate.getUTCDate() + daysPerSprint);
+	  } else {
+		// Hard code values for Sprint 8. 
+		// BugBug: Fix this calculation by making it more generic. 
+		dateAdjustment = 3;
+      	sprintStartDate.setUTCDate(sprintStartDate.getUTCDate() + daysPerSprint);
+      	sprintEndDate.setUTCDate(sprintEndDate.getUTCDate() + daysPerSprint - dateAdjustment);
+		daysPerSprint = 5;
+	  }
     }
 
     // Debug code:
